@@ -1,0 +1,336 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+
+{% block title %}
+главная
+{% endblock %}
+
+
+
+{% block content %}
+<div class="modal">
+    <div class="box">
+        <div class="text">
+            <h3>
+                Start your journey
+            </h3>
+            <img src="{% static 'img/close.svg' %}" id="close" alt="">
+        </div>
+        <form action="">
+            <input type="text" name="" id="">
+            <input type="text" name="" id="">
+            <input type="text" name="" id="">
+            <input type="text" name="" id="">
+            <input type="text" name="" id="">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <button>Enquire now</button>
+        </form>
+    </div>
+</div>
+<div class="burgerModal" id="burgerModal">
+    <div class="box">
+        <div class="block">
+            <img src="{% static 'img/myLogo.png' %}" alt="">
+            <img src="{% static 'img/closeBlac.svg' %}" id="burgerClose" alt="">
+        </div>
+        <div class="block">
+            <div class="elem">
+                <img src="{% static 'img/burgerFon.png' %}" alt="">
+            </div>
+            <div class="elem">
+                <a href="#about" id="urls">About</a>
+                <a href="#events" id="urls">Events</a>
+                <a href="#weddings" id="urls">Weddings</a>
+                <a href="#gallery" id="urls">Gallery</a>
+            </div>
+        </div>
+        <hr>
+        <div class="block">
+            <h3>Step in to the Art Of Elegance</h3>
+            <a href="">+1 (267) 797-6086</a>
+            <a href="">+1 (267) 797-6086</a>
+            <button id="btnForms">Enquire now</button>
+        </div>
+    </div>
+</div>
+<section class="head">
+    <div class="cont">
+        <div class="box">
+            <h1>
+                Step in to the <br> Art Of Elegance
+            </h1>
+        </div>
+    </div>
+</section>
+<section class="about" id="about">
+    <div class="cont">
+        <h2>About Us</h2>
+        <div class="box1">
+            <div class="elem">
+                <img src="{% static 'img/aboutFon.png' %}" alt="">
+                <div class="block">
+                    <p>We choose comfort and luxury</p>
+                    <hr>
+                    <h3>Our Priority</h3>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                        duis enim velit mollit.Amet minim mollit non deserunt ullamco est sit</p>
+                </div>
+            </div>
+            <div class="elem">
+                <img src="{% static 'img/myLogo.png' %}" alt="">
+            </div>
+        </div>
+        <div class="box2">
+
+            <div class="elem">
+                <img src="{% static 'img/myLogo.png' %}" alt="">
+            </div>
+            <div class="elem">
+                <img src="{% static 'img/aboutFon.png' %}" alt="">
+                <div class="block">
+                    <p>We choose comfort and luxury</p>
+                    <hr>
+                    <h3>Our Priority</h3>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                        duis enim velit mollit.Amet minim mollit non deserunt ullamco est sit</p>
+                </div>
+            </div>
+        </div>
+        <div class="box1">
+            <div class="elem">
+                <img src="{% static 'img/aboutFon.png' %}" alt="">
+                <div class="block">
+                    <p>We choose comfort and luxury</p>
+                    <hr>
+                    <h3>Our Priority</h3>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                        duis enim velit mollit.Amet minim mollit non deserunt ullamco est sit</p>
+                </div>
+            </div>
+            <div class="elem">
+                <img src="{% static 'img/myLogo.png' %}" alt="">
+            </div>
+        </div>
+        <div class="box2 stop">
+
+            <div class="elem">
+                <img src="{% static 'img/myLogo.png' %}" alt="">
+            </div>
+            <div class="elem">
+                <img src="{% static 'img/aboutFon.png' %}" alt="">
+                <div class="block">
+                    <p>We choose comfort and luxury</p>
+                    <hr>
+                    <h3>Our Priority</h3>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                        duis enim velit mollit.Amet minim mollit non deserunt ullamco est sit</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="fon3d">
+    <div class="cont">
+        <h2>
+            3D Tour
+        </h2>
+        <div class="box">
+            <a href="https://www.asteroommls.com/pviewer?hideleadgen=1&token=kaXbCKvBbkGBjVxi4XfbPQ">
+
+            </a>
+            <iframe src="https://www.asteroommls.com/pviewer?hideleadgen=1&token=kaXbCKvBbkGBjVxi4XfbPQ"
+                frameborder="0"></iframe>
+        </div>
+    </div>
+</section>
+<section class="events" id="events">
+    <div class="cont">
+        <h2>
+            Events
+        </h2>
+        <div class="box">
+            <div class="block">
+                <div class="elem">
+                    <div class="img">
+                        <img src="{% static 'img/Weddings.png' %}" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Weddings</h3>
+                        <p>
+                            Aliquam porta nisl dolor, molestie pellentesque elit molestie in. Morbi metus neque,
+                            elementum ullam
+                        </p>
+                    </div>
+                </div>
+                <div class="elem">
+                    <div class="img">
+                        <img src="{% static 'img/Birthdays.png' %}" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Birthdays</h3>
+                        <p>
+                            Aliquam pulvinar vestibulum blandit. Donec sed nisl libero. Fusce dignissim luctus sem eu
+                            dapibus. P
+                        </p>
+                    </div>
+                </div>
+                <div class="elem">
+                    <div class="img">
+                        <img src="{% static 'img/Corporate parties.svg' %}" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Corporate parties</h3>
+                        <p>
+                            Donec sed erat ut magna suscipit mattis. Aliquam erat volutpat. Morbi in orci risus. Donec
+                            pretium f
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="block">
+                <div class="elem">
+                    <div class="img">
+                        <img src="{% static 'img/Business meetings.svg' %}" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Business meetings</h3>
+                        <p>
+                            Vestibulum eu quam nec neque pellentesque efficitur id eget nisl. Proin porta est convallis
+                            lacus bl
+                        </p>
+                    </div>
+                </div>
+                <div class="elem">
+                    <div class="img">
+                        <img src="{% static 'img/Catering.svg' %}" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Catering</h3>
+                        <p>
+                            In a laoreet purus. Integer turpis quam, laoreet id orci nec, ultrices lacinia nunc. Aliquam
+                            erat vo
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="about control" id="weddings">
+    <div class="cont">
+        <h2>Weddings</h2>
+        <div class="box1">
+            <div class="elem">
+                <img src="{% static 'img/aboutFon.png' %}" alt="">
+                <div class="block">
+                    <p>We choose comfort and luxury</p>
+                    <hr>
+                    <h3>Our Priority</h3>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                        duis enim velit mollit.Amet minim mollit non deserunt ullamco est sit</p>
+                </div>
+            </div>
+            <div class="elem">
+                <img src="{% static 'img/myLogo.png' %}" alt="">
+            </div>
+        </div>
+        <div class="box2">
+
+            <div class="elem">
+                <img src="{% static 'img/myLogo.png' %}" alt="">
+            </div>
+            <div class="elem">
+                <img src="{% static 'img/aboutFon.png' %}" alt="">
+                <div class="block">
+                    <p>We choose comfort and luxury</p>
+                    <hr>
+                    <h3>Our Priority</h3>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                        duis enim velit mollit.Amet minim mollit non deserunt ullamco est sit</p>
+                </div>
+            </div>
+        </div>
+        <div class="box1">
+            <div class="elem">
+                <img src="{% static 'img/aboutFon.png' %}" alt="">
+                <div class="block">
+                    <p>We choose comfort and luxury</p>
+                    <hr>
+                    <h3>Our Priority</h3>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                        duis enim velit mollit.Amet minim mollit non deserunt ullamco est sit</p>
+                </div>
+            </div>
+            <div class="elem">
+                <img src="{% static 'img/myLogo.png' %}" alt="">
+            </div>
+        </div>
+        <div class="box2 stop">
+
+            <div class="elem">
+                <img src="{% static 'img/myLogo.png' %}" alt="">
+            </div>
+            <div class="elem">
+                <img src="{% static 'img/aboutFon.png' %}" alt="">
+                <div class="block">
+                    <p>We choose comfort and luxury</p>
+                    <hr>
+                    <h3>Our Priority</h3>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                        duis enim velit mollit.Amet minim mollit non deserunt ullamco est sit</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="gallery" id="gallery">
+    <div class="cont">
+        <h2>Gallery</h2>
+        <div class="box">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="block">
+                            <img src="{% static 'img/swiperFon.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="block">
+                            <img src="{% static 'img/swiperFon.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="block">
+                            <img src="{% static 'img/swiperFon.png' %}" alt="">
+                        </div>
+                    </div>
+                    ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swipBox">
+                    <div class="custom">
+                        <div class="swiper-button-prev btns"></div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next btns"></div>
+                    </div>
+                </div>
+                <div class="myBlock">
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+</section>
+<form method="post" class="forms">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Отправить</button>
+  </form>
+
+{% endblock %}

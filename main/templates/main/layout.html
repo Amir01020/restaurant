@@ -1,0 +1,415 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="{% static 'scss/style.css' %}">
+  <title>
+    {% block title %}
+
+    {% endblock %}
+    
+  </title>
+</head>
+
+<body>
+
+  <header>
+    <nav class="comp">
+      <ul>
+        <li><a href="tel:+998919999999">+998 91 999 99 99</a></li>
+        <li><a href=""><img src="{% static 'img/insta.svg' %}" alt=""></a></li>
+        <li><a href=""><img src="{% static 'img/fisbooc.svg' %}" alt=""></a></li>
+      </ul>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li class="bl"></li>
+        <li><a href="#events">Events</a></li>
+        <li class="bl"></li>
+        <li><a href="#weddings">Weddings</a></li>
+        <li class="bl"></li>
+        <li><a href="#gallery">Galery</a></li>
+      </ul>
+      <ul>
+        <li>
+          <a href="" id="btnForm">
+            Enquire now
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="mobaile">
+      <ul><li><a href=""><img src="{% static 'img/myLogo.png' %}"  alt=""></a></li></ul>
+      <ul><li id="myBurger"><a href="#" ><img src="{% static 'img/burger.svg' %}"  alt=""></a></li></ul>
+      
+    </nav>
+  </header>
+  <main>
+    {% block content %}
+
+    {% endblock %}
+  </main>
+  <footer>
+
+
+
+    <div class="cont myBlock">
+      <div class="footerCont">
+        <div class="map" id="map">
+  
+        </div>
+      </div>
+      <div class="box">
+        <img src="{% static 'img/logo1.png' %}" alt="">
+        <a href=""><img src="{% static 'img/icon.svg' %}" alt=""> 9806 Bustleton, Philadelphia PA 19115</a>
+        <div class="contact">
+          <a href="tel:">+1 (215) 206-7686</a>
+          <a href="tel:">+1 (215) 206-7686</a>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+  </footer>
+
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8vwy2tLXxwXz9HVOtVylxeJvw4YWHBbs&callback=initMap">
+    </script>
+  <script>
+
+    function initMap() {
+
+      const uluru = { lat: 55.8200691, lng: 49.1422454 };
+      let maps = document.querySelector('#map')
+
+      const map = new google.maps.Map(maps, {
+        zoom: 11,
+        center: uluru,
+        styles: [
+          {
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#212121"
+              }
+            ]
+          },
+          {
+            "elementType": "geometry.fill",
+            "stylers": [
+              {
+                "color": "#543c00"
+              }
+            ]
+          },
+          {
+            "elementType": "geometry.stroke",
+            "stylers": [
+              {
+                "color": "#ba8f17"
+              }
+            ]
+          },
+          {
+            "elementType": "labels.icon",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          },
+          {
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#fbbd13"
+              }
+            ]
+          },
+          {
+            "elementType": "labels.text.stroke",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          },
+          {
+            "featureType": "administrative",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#757575"
+              }
+            ]
+          },
+          {
+            "featureType": "administrative.country",
+            "elementType": "geometry.fill",
+            "stylers": [
+              {
+                "color": "#d29e0f"
+              }
+            ]
+          },
+          {
+            "featureType": "administrative.country",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#9e9e9e"
+              }
+            ]
+          },
+          {
+            "featureType": "administrative.land_parcel",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          },
+          {
+            "featureType": "administrative.locality",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#bdbdbd"
+              }
+            ]
+          },
+          {
+            "featureType": "administrative.neighborhood",
+            "elementType": "geometry.fill",
+            "stylers": [
+              {
+                "color": "#d29e0f"
+              }
+            ]
+          },
+          {
+            "featureType": "landscape.natural.terrain",
+            "elementType": "geometry.fill",
+            "stylers": [
+              {
+                "color": "#fbc42d"
+              }
+            ]
+          },
+          {
+            "featureType": "poi",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#757575"
+              }
+            ]
+          },
+          {
+            "featureType": "poi.park",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#181818"
+              }
+            ]
+          },
+          {
+            "featureType": "poi.park",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#616161"
+              }
+            ]
+          },
+          {
+            "featureType": "poi.park",
+            "elementType": "labels.text.stroke",
+            "stylers": [
+              {
+                "color": "#1b1b1b"
+              }
+            ]
+          },
+          {
+            "featureType": "road",
+            "elementType": "geometry.fill",
+            "stylers": [
+              {
+                "color": "#feba01"
+              }
+            ]
+          },
+          {
+            "featureType": "road",
+            "elementType": "geometry.stroke",
+            "stylers": [
+              {
+                "color": "#feba01"
+              }
+            ]
+          },
+          {
+            "featureType": "road",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#8a8a8a"
+              }
+            ]
+          },
+          {
+            "featureType": "road.arterial",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#373737"
+              }
+            ]
+          },
+          {
+            "featureType": "road.arterial",
+            "elementType": "geometry.fill",
+            "stylers": [
+              {
+                "color": "#feba01"
+              }
+            ]
+          },
+          {
+            "featureType": "road.highway",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#3c3c3c"
+              }
+            ]
+          },
+          {
+            "featureType": "road.highway",
+            "elementType": "geometry.fill",
+            "stylers": [
+              {
+                "color": "#feba01"
+              }
+            ]
+          },
+          {
+            "featureType": "road.highway.controlled_access",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#4e4e4e"
+              }
+            ]
+          },
+          {
+            "featureType": "road.local",
+            "elementType": "geometry.fill",
+            "stylers": [
+              {
+                "color": "#feba01"
+              }
+            ]
+          },
+          {
+            "featureType": "road.local",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#616161"
+              }
+            ]
+          },
+          {
+            "featureType": "transit",
+            "elementType": "geometry.fill",
+            "stylers": [
+              {
+                "color": "#feba01"
+              }
+            ]
+          },
+          {
+            "featureType": "transit",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#757575"
+              }
+            ]
+          },
+          {
+            "featureType": "transit.line",
+            "elementType": "geometry.fill",
+            "stylers": [
+              {
+                "color": "#feba01"
+              }
+            ]
+          },
+          {
+            "featureType": "water",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#000000"
+              }
+            ]
+          },
+          {
+            "featureType": "water",
+            "elementType": "geometry.fill",
+            "stylers": [
+              {
+                "color": "#563f01"
+              }
+            ]
+          },
+          {
+            "featureType": "water",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#3d3d3d"
+              }
+            ]
+          }
+        ]
+      });
+
+      const marker = new google.maps.Marker({
+        position: uluru,
+        map: map,
+      });
+    }
+    initMap()
+    window.initMap = initMap;
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <script>
+    new Swiper(".swiper", {
+
+      spaceBetween: 30,
+      
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
+  <script src="{% static 'js/script.js' %}"></script>
+</body>
+
+</html>
