@@ -554,7 +554,7 @@ footer .myBlock .footerCont .map {
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
   overflow-y: auto;
-  max-height: 90%;
+  max-height: 95%;
   padding: 30px;
 }
 .modal .box .text {
@@ -578,7 +578,8 @@ footer .myBlock .footerCont .map {
   width: 100%;
   margin-top: 20px;
   border-radius: 10px;
-  padding: 20px 15px;
+  height: 40px;
+  padding: 20px;
   border: 1px solid #D9B764;
   background-color: transparent;
   outline: none;
@@ -590,8 +591,8 @@ footer .myBlock .footerCont .map {
   border-radius: 10px;
   border: 1px solid #D9B764;
   margin-top: 20px;
-  min-height: 151px;
-  max-height: 151px;
+  min-height: 110px;
+  max-height: 110px;
   background-color: transparent;
   outline: none;
   padding: 20px;
@@ -599,12 +600,12 @@ footer .myBlock .footerCont .map {
 }
 .modal .box button {
   width: 100%;
-  padding: 15px 25px;
+  height: 50px;
   border-radius: 6px;
   background: #D9B764;
   color: #000;
   font-family: Inter;
-  font-size: 25px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
@@ -631,6 +632,7 @@ footer .myBlock .footerCont .map {
 .burgerModal .box {
   width: 100%;
   padding: 10px;
+  height: 100%;
 }
 .burgerModal .box hr {
   background-color: #000;
@@ -657,7 +659,7 @@ footer .myBlock .footerCont .map {
   width: 50%;
 }
 .burgerModal .box .block:nth-child(2) .elem img {
-  width: 100%;
+  height: 30vh;
 }
 .burgerModal .box .block:nth-child(2) .elem:nth-child(2) {
   display: flex;
@@ -771,6 +773,12 @@ footer .myBlock .footerCont .map {
     text-align: right;
     transform: translateX(-10px);
     font-size: 45px !important;
+  }
+  main .gallery h2 {
+    margin-top: 50px;
+  }
+  main .fon3d h2 {
+    margin-top: 80px;
   }
   main .about .box1 {
     flex-wrap: wrap;

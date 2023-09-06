@@ -3,7 +3,7 @@
 
 
 {% block title %}
-главная
+Bellagio Restaurant
 {% endblock %}
 
 
@@ -18,13 +18,13 @@
             <img src="{% static 'img/close.svg' %}" id="close" alt="">
         </div>
         <form action="">
-            <input type="text" name="" id="">
-            <input type="text" name="" id="">
-            <input type="text" name="" id="">
-            <input type="text" name="" id="">
-            <input type="text" name="" id="">
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-            <button>Enquire now</button>
+            <input type="text" id="name" name="" placeholder="Name" id="">
+            <input type="number" id="phone" name="" placeholder="Phone" id="">
+            <input type="text" id="eventType" name="" placeholder="Event type" id="">
+            <input type="text" id="dateEvent" name="" placeholder="Date of the event" id="">
+            <input type="text"  id="numberGuests" name="" placeholder="Number of guests" id="">
+            <textarea name="" id="comment" placeholder="Your suggestion (comment)" cols="30" rows="10"></textarea>
+            <button id="btnSubmit">Enquire now</button>
         </form>
     </div>
 </div>
@@ -48,8 +48,8 @@
         <hr>
         <div class="block">
             <h3>Step in to the Art Of Elegance</h3>
-            <a href="">+1 (267) 797-6086</a>
-            <a href="">+1 (267) 797-6086</a>
+            <a href="tel:+12672144444">+1 (267) 214-44-44</a>
+            <a href="tel:+12672144444">+1 (267) 797-6086</a>
             <button id="btnForms">Enquire now</button>
         </div>
     </div>
@@ -327,10 +327,6 @@
         </div>
     </div>
 </section>
-<form method="post" class="forms">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Отправить</button>
-  </form>
+
 
 {% endblock %}

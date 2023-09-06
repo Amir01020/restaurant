@@ -684,7 +684,7 @@ footer {
         box-shadow: 0px 1px 38px 0px rgba(0, 0, 0, 0.55);
         backdrop-filter: blur(8px);
         overflow-y: auto;
-        max-height: 90%;
+        max-height: 95%;
 
         .text {
             @include f(space-between, center);
@@ -711,7 +711,8 @@ footer {
             width: 100%;
             margin-top: 20px;
             border-radius: 10px;
-            padding: 20px 15px;
+            height: 40px;
+            padding: 20px;
             border: 1px solid #D9B764;
             background-color: transparent;
             outline: none;
@@ -724,8 +725,8 @@ footer {
             border-radius: 10px;
             border: 1px solid #D9B764;
             margin-top: 20px;
-            min-height: 151px;
-            max-height: 151px;
+            min-height: 110px;
+            max-height: 110px;
             background-color: transparent;
             outline: none;
             padding: 20px;
@@ -735,12 +736,13 @@ footer {
 
         button {
             width: 100%;
-            padding: 15px 25px;
+            // padding: 15px 25px;
+            height: 50px;
             border-radius: 6px;
             background: #D9B764;
             color: #000;
             font-family: Inter;
-            font-size: 25px;
+            font-size: 20px;
             font-style: normal;
             font-weight: 800;
             line-height: normal;
@@ -771,7 +773,7 @@ footer {
     .box {
         width: 100%;
         padding: 10px;
-
+        height: 100%;
         hr {
             background-color: #000;
             opacity: 1;
@@ -798,7 +800,7 @@ footer {
                     width: 50%;
 
                     img {
-                        width: 100%;
+                        height: 30vh;
                     }
 
                     &:nth-child(2) {
@@ -954,7 +956,12 @@ footer {
         font-size: 45px !important;
         // margin-bottom: 100px !important;
     }
-
+    main .gallery h2{
+        margin-top: 50px;
+    }
+    main .fon3d h2{
+        margin-top: 80px;
+    }
     main .about .box1 {
         flex-wrap: wrap;
         position: relative;
