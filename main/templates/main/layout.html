@@ -6,6 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="icon" href="{% static 'img/myLogo.png' %}">
   <link rel="stylesheet" href="{% static 'scss/style.css' %}">
   <title>
@@ -76,14 +77,18 @@
     
     
   </footer>
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
   <script async
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8vwy2tLXxwXz9HVOtVylxeJvw4YWHBbs&callback=initMap">
     </script>
+    <script>
+      AOS.init();
+    </script>
   <script>
+    
 
     function initMap() {
 

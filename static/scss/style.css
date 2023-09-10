@@ -768,6 +768,14 @@ footer .myBlock .footerCont .map {
     width: 100%;
   }
 }
+[data-aos=fade-right] {
+  transition: all 1s !important;
+}
+
+[data-aos=fade-left] {
+  transition: all 1s !important;
+}
+
 @media (max-width: 768px) {
   h2 {
     text-align: right;
